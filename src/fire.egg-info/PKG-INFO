@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fire
+Version: 0.0.post0.dev1+ge39f7ea
+Summary: Add a short description here!
+Home-page: https://github.com/dymaxionlabs/basurales
+Author: Roberta Devesa
+Author-email: mariaroberta.devesa@gmail.com
+License: bsd-2
+Project-URL: Documentation, https://github.com/dymaxionlabs/
+Description: # Incendios Forestales
+        
+        Deteccion de incendios forestales
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
