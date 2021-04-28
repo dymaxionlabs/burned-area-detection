@@ -32,3 +32,30 @@ def plot_data_generator(num_samples=3, fig_size=(20, 10), *, train_config):
 
     plot_samples(plt, data_generator, num_samples)
     plt.show()
+    
+def plot_data_results(num_samples=3, fig_size=(20, 10), *, predict_config):
+    images_dir = os.path.join(predict_config.images_path, 'images')
+    mask_dir = os.path.join(predict_config.results_path)
+
+    images = glob(os.path.join(images_dir, '*.tif'))
+
+    data_generator = build_data_generator(images,
+                                          config=train_config,
+                                          mask_dir=mask_dir)
+
+    def plot_samples(plt, generator, num):
+        j = 0
+        for image_batch, mask_batch in data_generator:
+            for image, mask in zip(image_batch, mask_batch):
+                _, ax = plt.subplots(nrows=1,
+                                     ncols=predict_config.n_classes + 1,
+                                     figsize=fig_size)
+                ax[0].imshow(image[:,:,:predict_config.n_channels])
+                for i in range(predict_config.n_classes):
+                    ax[i + 1].imshow(mask[:, :, i])
+                j += 1
+                if j >= num:
+                    return
+
+    plot_samples(plt, data_generator, num_samples)
+    plt.show()
