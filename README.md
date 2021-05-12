@@ -2,6 +2,8 @@
 
 Detection of burned areas using deep learning from satellite images.
 
+![](img/burn.jpg)
+
 This repository contains a set of Jupyter Notebooks describing the steps for
 building a semantic segmentation model based on the U-Net architecture for
 detecting burned areas from fires from optical satellite imagery.
