@@ -9,12 +9,12 @@ detecting burned areas from fires from optical satellite imagery.
 Uses [satproc](https://github.com/dymaxionlabs/satproc) and
 [unetseg](https://github.com/dymaxionlabs/unetseg) Python packages.
 
-## Usage
+## Notebooks
 
-1. [1_Pre-process.ipynb](1_Pre-process.ipynb): Image and ground truth data preprocessing and dataset generation
-2. [2_Training.ipynb](2_Training.ipynb): Model training and evaluation
-3. [3_Prediction.ipynb](3_Prediction.ipynb): Prediction
-4. [4_Post-process.ipynb](4_Post-process.ipynb): Post-processing of prediction results
+1. [Pre-process](1_Pre-process.ipynb): Image and ground truth data preprocessing and dataset generation
+2. [Training](2_Training.ipynb): Model training and evaluation
+3. [Prediction](3_Prediction.ipynb): Prediction
+4. [Post-process](4_Post-process.ipynb): Post-processing of prediction results
 
 ## Description
 
