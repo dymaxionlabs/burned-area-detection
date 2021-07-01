@@ -1,8 +1,22 @@
-# burned-area-detection
+*This digital tool is part of the catalog of tools of the **Inter-American Development Bank**. You can learn more about the IDB initiative at [code.iadb.org](https://code.iadb.org/en)*
 
-Detection of burned areas using deep learning from satellite images.
+<p align="center">
+  <img height="200" src="img/logo.png">
+</p>
 
-![](img/burn.jpg)
+  # <img height="30" src="https://img.icons8.com/flat-round/64/000000/fire-element.png"/> burned-area-detection  
+  
+
+[![](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/dymaxionlabs/burned-area-detection/blob/master/LICENSE.txt)
+
+
+<br>
+<p align="center">Detection of burned areas using deep learning from satellite images.</p>
+
+<p align="center">
+  <img height="300" widht="500" src="img/burn.jpg">
+</p>
+
 
 This repository contains a set of Jupyter Notebooks describing the steps for
 building a semantic segmentation model based on the U-Net architecture for
